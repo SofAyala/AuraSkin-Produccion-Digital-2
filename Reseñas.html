@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Reseñas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=6">
+</head>
+
+<body>
+<header class="header-principal">
+
+    <a href="index.html" class="logo-link">
+        <img src="img/LOGOAURA.png" alt="AuraSkin" class="logo">
+    </a>
+
+    <nav class="menu-principal">
+        <ul>
+            <li><a href="index.html">SERUMS</a></li>
+            <li><a href="Reseñas.html">RESEÑAS</a></li>
+            <li><a href="Conocenos.html">CONÓCENOS</a></li>
+            <li><a href="Contacto.html">CONTACTO</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+    <main>
+<section class="seccion-review">
+
+    <div class="intro-review">
+        <span>TU OPINIÓN NOS IMPORTA</span>
+        <h1>CONTANOS TU EXPERIENCIA</h1>
+        <p>
+            ¿Probaste AuraSkin? Compartí tu experiencia y ayudanos
+            a seguir mejorando nuestros productos.
+        </p>
+    </div>
+
+    <div class="review-container">
+
+        <form id="review-form" action="recibir_reseña.php" method="POST">
+
+            <div class="form-group">
+                <label for="username">NOMBRE</label>
+                <input 
+                    type="text" 
+                    id="username" 
+                    name="username" 
+                    placeholder="Tu nombre"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label>PUNTUACIÓN</label>
+
+                <div class="rating">
+                    <input type="radio" id="star5" name="rating" value="5">
+                    <label for="star5"></label>
+
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4"></label>
+
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3"></label>
+
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2"></label>
+
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1"></label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="review">RESEÑA</label>
+                <textarea 
+                    id="review" 
+                    name="review" 
+                    rows="5"
+                    placeholder="Contanos qué te pareció..."
+                    required
+                ></textarea>
+            </div>
+
+            <button type="submit">ENVIAR RESEÑA</button>
+
+        </form>
+
+    </div>
+
+</section>
+ 
+        
+     
+  <section class="reseñas-productos">
+
+    <h3>Reseñas de Nuestros Productos</h3>
+
+    <div class="columna">
+        <img src="./img/CELESTE.png" alt="Serum Cat">
+        <h1>Serum Cat</h1>
+
+        <div class="estrellas">★★★★★</div>
+
+        <p>"Muy lindo serum, es súper gentil con la piel. La vitamina C se volvió mi favorita."</p>
+
+        <h2>— Nina Martinez</h2>
+    </div>
+
+
+    <div class="columna">
+        <img src="./img/AuraSkinamarillo2.png" alt="Serum Wix">
+        <h1>Serum Wix</h1>
+
+        <div class="estrellas">★★★★★</div>
+
+        <p>"Me encanta el serum hialurónico. Ayuda a calmar mi piel y la deja súper luminosa."</p>
+
+        <h2>— Bruna Bonifacini</h2>
+    </div>
+
+
+    <div class="columna">
+        <img src="./img/verdenuevo.png" alt="Serum Aura">
+        <h1>Serum Aura</h1>
+
+        <div class="estrellas">★★★★☆</div>
+
+        <p>"Hidrata muchísimo sin dejar sensación oleosa. Me encantó la textura."</p>
+
+        <h2>— Juliana Martinez</h2>
+    </div>
+
+
+    <div class="columna">
+        <img src="./img/nuevovioleta.png" alt="Serum Skin">
+        <h1>Serum Skin</h1>
+
+        <div class="estrellas">★★★★☆</div>
+
+        <p>"Me deja la piel hidratada y con muy buen aspecto. Lo seguiría usando sin dudas."</p>
+
+        <h2>— Pamela Soto</h2>
+    </div>
+
+</section>
+
+  
+    
+    <script>
+        function sendReview(nameId, reviewId, ratingName) {
+            const name = document.getElementById(nameId).value;
+            const review = document.getElementById(reviewId).value;
+            const rating = document.querySelector(`input[name='${ratingName}']:checked`).value;
+            alert(`Reseña enviada: 
+            Nombre: ${name}
+            Puntuación: ${rating} estrellas
+            Reseña: ${review}`);
+        }
+    </script>
+    
+      <section>
+        
+      </section>
+
+
+<footer class="footer">
+    <div class="redes-sociales">
+        <img src="./img/instagram (3).png" alt="Facebook"></a>
+        <img src="./img/whatsapp (1).png" alt="Twitter"></a>
+        <img src="./img/tik-tok (3).png" alt="Instagram"></a>
+    </div>
+    <p>&copy; 2024 Tu Empresa | Todos los derechos reservados</p>
+</footer>
+</body>
+</html>
