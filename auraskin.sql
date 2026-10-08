@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 08-10-2026 a las 00:35:36
+-- Tiempo de generación: 08-10-2026 a las 18:54:28
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -40,13 +40,19 @@ CREATE TABLE `productos` (
 --
 
 INSERT INTO `productos` (`id_producto`, `nombre`, `categoria`, `precio`, `imagen`) VALUES
-(1, 'Serum Cat', 'Serum', 11000, 'CELESTE.png'),
-(2, 'Serum Wix', 'Serum', 11000, 'AuraSkinamarillo2.png'),
-(3, 'Serum Aura', 'Serum', 11000, 'verdenuevo.png'),
-(4, 'Serum Skin', 'Serum', 11000, 'nuevovioleta.png'),
-(5, 'Crema Glow', 'Crema', 16000, 'cremaamarillo.png'),
-(6, 'Crema Moist', 'Crema', 16000, 'cremarosa.png'),
-(7, 'Crema Clean', 'Crema', 16000, 'cremault.png');
+(1, 'Serum Cat', 'Serum', 11000, 'serum_hidratante.png'),
+(2, 'Serum Wix', 'Serum', 11000, 'CAMBIO2.png'),
+(3, 'Serum Aura', 'Serum', 11000, 'CAMBIO3.png'),
+(4, 'Serum Skin', 'Serum', 11000, 'CAMBIO4.png'),
+(5, 'Crema Glow', 'Crema', 16000, 'CAMBIOS1.png'),
+(6, 'Crema Moisturizer', 'Crema', 16000, 'CAMBIOS2.png'),
+(7, 'Crema Cleaning', 'Crema', 16000, 'CAMBIOS3.png'),
+(8, 'Serum Skin 5', 'Serum', 11000, 'CAMBIO5.png'),
+(9, 'Serum Skin 6', 'Serum', 11000, 'CAMBIO6.png'),
+(10, 'Serum Skin 7', 'Serum', 11000, 'CAMBIO7.png'),
+(11, 'Serum Skin 8', 'Serum', 11000, 'CAMBIO8.png'),
+(12, 'Crema Glow 4', 'Crema', 16000, 'CAMBIOS4.png'),
+(13, 'Crema Glow 5', 'Crema', 16000, 'CAMBIOS5.png');
 
 -- --------------------------------------------------------
 
@@ -101,7 +107,7 @@ ALTER TABLE `reseñas`
 -- AUTO_INCREMENT de la tabla `productos`
 --
 ALTER TABLE `productos`
-  MODIFY `id_producto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id_producto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT de la tabla `reseñas`
