@@ -11,27 +11,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./css/style.css?v=7">
+      <link rel="stylesheet" href="css/style.css?v=15">
 </head>
 
 <body>
 
-    <header class="header-principal">
+    
+<header class="header-principal">
 
-        <a href="index.html" class="logo-link">
-            <img src="img/LOGOAURA.png" alt="AuraSkin" class="logo">
-        </a>
+    <a href="index.html" class="logo-link">
+        <img src="img/LOGONUEVOAURA.png" alt="AuraSkin" class="logo">
+    </a>
 
-        <nav class="menu-principal">
-            <ul>
-                <li><a href="index.html">SERUMS</a></li>
-                <li><a href="Reseñas.html">RESEÑAS</a></li>
-                <li><a href="Conocenos.html">CONÓCENOS</a></li>
-                <li><a href="Contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>
+    <div class="buscador-header">
+        <form action="buscar.php" method="GET">
+            <input type="text" name="busqueda" placeholder="Buscar productos..." required>
+            <button type="submit">BUSCAR</button>
+        </form>
+    </div>
 
-    </header>
+    <nav class="menu-principal">
+        <ul>
+            <li><a href="index.html">SERUMS</a></li>
+            <li><a href="Reseñas.html">RESEÑAS</a></li>
+            <li><a href="Conocenos.html">CONÓCENOS</a></li>
+            <li><a href="Contacto.html">CONTACTO</a></li>
+        </ul>
+    </nav>
+
+</header>
+
 <section class="contacto-redes">
 
     <div class="intro-contacto-redes">
@@ -67,6 +76,28 @@
 
     </div>
 
+</section>
+
+
+<form class="formulario-auraskin" action="recibir_contacto.php" method="POST">
+    <h2>¿TENÉS ALGUNA CONSULTA?</h2>
+    <p>Completá el formulario y ponete en contacto con nuestro equipo.</p>
+
+    <form class="formulario-auraskin">
+        <label for="nombre-contacto">Nombre completo</label>
+        <input type="text" id="nombre-contacto" name="nombre" placeholder="Ingresá tu nombre" required>
+
+        <label for="email-contacto">Correo electrónico</label>
+        <input type="email" id="email-contacto" name="email" placeholder="Ingresá tu email" required>
+
+        <label for="asunto-contacto">Asunto</label>
+        <input type="text" id="asunto-contacto" name="asunto" placeholder="¿Sobre qué querés consultar?" required>
+
+        <label for="mensaje-contacto">Mensaje</label>
+        <textarea id="mensaje-contacto" name="mensaje" rows="5" placeholder="Escribí tu consulta..." required></textarea>
+
+        <button type="submit">ENVIAR CONSULTA</button>
+    </form>
 </section>
 
 <section>
